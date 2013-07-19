@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.navigator.navigatorContent">
+      <actionProvider
+            class="tojo.emf.graphml.ActionProvider"
+            id="tojo.emf.graphml.actionprovider">
+         <enablement>
+            <instanceof
+                  value="org.eclipse.emf.ecore.EObject">
+            </instanceof>
+         </enablement>
+      </actionProvider>
+   </extension>
+   <extension
+         point="org.eclipse.ui.navigator.viewer">
+      <viewerActionBinding
+            viewerId="org.artop.aal.examples.explorer.views.autosarExplorer">
+         <includes>
+            <actionExtension
+                  pattern="tojo.emf.graphml.*">
+            </actionExtension>
+         </includes>
+      </viewerActionBinding>
+   </extension>
+
+</plugin>

@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: EMF to GraphML
+Bundle-SymbolicName: tojo.emf.graphml;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: tojo.emf.graphml.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.emf.ecore;bundle-version="2.8.0",
+ org.eclipse.ui.navigator;bundle-version="3.5.200",
+ org.scala-ide.scala.library,
+ org.eclipse.sphinx.emf.ui;bundle-version="0.7.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
